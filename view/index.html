@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {padding-top: 70px;}
+        .tab-border { height: 35px; border: 1px #333 solid;}
     </style>    
     <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
     <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
@@ -84,7 +85,7 @@
     </div>
 
     <div class="container">
-           <h1>Nav-Tabs 頁籤</h1>
+           <h2>Nav-Tabs 頁籤</h2>
                          <!-- nab-tabs: 頁籤 -->
                          <!-- nab-pills: 藥片樣式 -->
                          <ul class="nav nav-tabs">
@@ -111,7 +112,7 @@
     </div>
 
     <div class="container">
-        <h1>工具列 Button 群組</h1>
+        <h2>工具列 Button 群組</h2>
                 <a class="btn btn-default" href="#" role="button">Link</a>
                 <button class="btn btn-default" type="submit">Button</button>
                 <input class="btn btn-default" type="button" value="Input">
@@ -123,6 +124,33 @@
                 <button type="button" class="btn btn-success">Success</button>
                 <button type="button" class="btn btn-warning">Warning</button>
                 <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>排版</h2>
+        <div class="row">
+            <!-- 分 2 欄 -->
+            <div class="col-lg-6 tab-border">col-lg-6</div>
+            <div class="col-lg-6 tab-border">col-lg-6</div>
+            <!-- 分 4 欄 -->
+            <div class="col-lg-3 tab-border">col-lg-3</div>
+            <div class="col-lg-3 tab-border">col-lg-3</div>
+            <div class="col-lg-3 tab-border">col-lg-3</div>
+            <div class="col-lg-3 tab-border">col-lg-3</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <h2>表格</h2>
+        <!-- table : 基本表格 -->
+        <!-- table-bordered : 含邊框 -->
+        <!-- table-hover : 移入row -->
+        <table class="table table-bordered table-hover">
+            <tr><th>Title 1</th><th>Title 2</th></tr>
+            <tr><td>Content 1</td><td>Content 2</td></tr>
+            <tr><td>Content 3</td><td>Content 4</td></tr>
+        </table>
     </div>
 
     <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
